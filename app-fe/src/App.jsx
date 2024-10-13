@@ -43,7 +43,7 @@ function App() {
     };
 
     return (
-        <div className="App bg-teal-800 min-h-screen text-white">
+        <div className="App bg-teal-950 min-h-screen text-white">
             <Router>
                 <Routes>
                     <Route path="/login" element={<Login setIsAuthenticated={setIsAuthenticated} />} />

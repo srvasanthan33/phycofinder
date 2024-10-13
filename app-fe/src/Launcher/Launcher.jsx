@@ -1,8 +1,11 @@
 import React from 'react'
+import Header from '../Helpers/Header'
 
 function Launcher() {
   return (
-    <div className="h-screen bg-teal-950 w-screen">Launcher</div>
+    <div className="flex-1 p-10 launcher-container">
+      <Header title="Launch"/>
+    </div>
   )
 }
 
