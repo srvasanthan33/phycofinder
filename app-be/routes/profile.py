@@ -11,9 +11,12 @@ def profile():
     identity = get_jwt_identity()
     findUser = mongo.db.users.find_one({'email':identity['email']})
 
+    
     if findUser:
         
         findUser['_id'] = str(findUser['_id']) 
+        if findUser['videos']:
+            findUser['videos'] = [str(findUser['videos'])]
 
         return jsonify({'message': 'Welcome', 'userDetails': findUser}), 200
     else:

@@ -31,9 +31,9 @@ function Profile() {
     }
 
     return (
-        <div className="flex-1 p-10 bg-teal-800">
+        <div className="flex-1 p-10 ">
             <Header title="Profile"/>
-            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-4 border-lime-300">
+            <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl border-4 border-lime-300 mt-12">
                 <div className="md:flex">
                     <div className="p-8">
                         <div className="uppercase tracking-wide text-sm text-teal-500 font-semibold">User Profile</div>

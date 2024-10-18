@@ -57,7 +57,7 @@ def login():
 
                 access_token = create_access_token(identity={'name':userExist['name'],'email':email})
                 response = make_response(jsonify({'message':'Logged in Successfully'}),201)
-                response.set_cookie('access_token_cookie',access_token,max_age=60*60*24,httponly=True,samesite='Strict')
+                response.set_cookie('access_token_cookie',access_token,max_age=60*60*24,httponly=True )
 
                 return response
         raise Exception("Password or Email Incorrect")
